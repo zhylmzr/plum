@@ -435,3 +435,6 @@ if %installed_packages% equ 0 (
 echo.
 
 :exit
+rem "set /p" will set errorlevel=1 if input is empty,
+rem so here the errorlevel is explicitly set to 0.
+exit /b 0
